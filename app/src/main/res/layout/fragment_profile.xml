@@ -1,0 +1,68 @@
+<FrameLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:textAppearance="@style/AppTheme"
+        android:layout_marginTop="25dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/UserPhoto"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_below="@+id/progressbar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="92dp"
+            android:background="@drawable/profile_image"
+            android:scaleType="centerCrop" />
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/UserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/UserPhoto"
+            android:layout_marginTop="32dp"
+            />
+
+        <Button
+            android:id="@+id/ButtonSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/UserName"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/rounded_blue"
+            android:paddingLeft="55dp"
+            android:paddingRight="55dp"
+            android:text="Edit" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>
